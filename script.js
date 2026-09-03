@@ -1,96 +1,38 @@
-
-// ================================
-// MENU MOBILE
-// ================================
+// MENU
 
 const menuBotao = document.getElementById("menuBotao");
 const navegacao = document.getElementById("navegacao");
 
-menuBotao.addEventListener("click", () => {
+menuBotao.addEventListener("click", function() {
     navegacao.classList.toggle("ativo");
 });
 
 
-// Fecha o menu ao clicar em algum link
+// FECHAR MENU
 
-const linksMenu = document.querySelectorAll(".navegacao a");
+const links = document.querySelectorAll(".navegacao a");
 
-linksMenu.forEach((link) => {
-
-    link.addEventListener("click", () => {
+for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function() {
         navegacao.classList.remove("ativo");
     });
+}
 
-});
 
-
-// ================================
 // FORMULÁRIO
-// ================================
 
 const formulario = document.getElementById("formulario");
 
-const mensagemFormulario =
-    document.getElementById("mensagemFormulario");
-
-formulario.addEventListener("submit", (evento) => {
+formulario.addEventListener("submit", function(evento) {
 
     evento.preventDefault();
 
-    const nome =
-        document.getElementById("nome").value;
+    const nome = document.getElementById("nome").value;
 
-    mensagemFormulario.textContent =
-        `Obrigado, ${nome}! Sua mensagem foi enviada.`;
+    const mensagem = document.getElementById("mensagemFormulario");
+
+    mensagem.textContent =
+        "Obrigado, " + nome + "! Sua mensagem foi enviada.";
 
     formulario.reset();
-
-});
-
-
-// ================================
-// ANIMAÇÃO AO ENTRAR NA TELA
-// ================================
-
-const elementos = document.querySelectorAll(
-    ".card, .sobre__texto, .painel, .formulario"
-);
-
-const observador = new IntersectionObserver(
-    (entradas) => {
-
-        entradas.forEach((entrada) => {
-
-            if (entrada.isIntersecting) {
-
-                entrada.target.style.opacity = "1";
-
-                entrada.target.style.transform =
-                    "translateY(0)";
-
-                observador.unobserve(entrada.target);
-
-            }
-
-        });
-
-    },
-    {
-        threshold: 0.15
-    }
-);
-
-
-elementos.forEach((elemento) => {
-
-    elemento.style.opacity = "0";
-
-    elemento.style.transform =
-        "translateY(25px)";
-
-    elemento.style.transition =
-        "opacity 0.6s ease, transform 0.6s ease";
-
-    observador.observe(elemento);
-
 });
