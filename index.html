@@ -1,13 +1,515 @@
 <!DOCTYPE html>
-
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Página web moderna e responsiva."
+    >
+
+    <title>DevSpace | Aprenda e crie</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<h1>Meu blog tech</h1>
-<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+
+    <header class="cabecalho">
+
+        <div class="container cabecalho__conteudo">
+
+            <a href="#" class="logo">
+                <span class="logo__icone">&lt;/&gt;</span>
+                <span>DevSpace</span>
+            </a>
+
+            <button
+                class="menu-botao"
+                id="menuBotao"
+                aria-label="Abrir menu"
+            >
+                ☰
+            </button>
+
+            <nav class="navegacao" id="navegacao">
+                <a href="#inicio">Início</a>
+                <a href="#recursos">Recursos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <a href="#contato" class="botao botao--pequeno">
+                Começar
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="inicio">
+
+            <div class="container hero__conteudo">
+
+                <div class="hero__texto">
+
+                    <span class="etiqueta">
+                        ✦ Aprenda. Crie. Evolua.
+                    </span>
+
+                    <h1>
+                        Transforme suas ideias em
+                        <span>experiências digitais.</span>
+                    </h1>
+
+                    <p>
+                        Aprenda a criar interfaces modernas,
+                        acessíveis e responsivas utilizando as
+                        principais tecnologias da web.
+                    </p>
+
+                    <div class="hero__botoes">
+
+                        <a
+                            href="#recursos"
+                            class="botao"
+                        >
+                            Explorar projeto
+                        </a>
+
+                        <a
+                            href="#sobre"
+                            class="botao botao--secundario"
+                        >
+                            Saiba mais →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero__visual">
+
+                    <div class="codigo">
+
+                        <div class="codigo__topo">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="codigo__corpo">
+
+                            <p>
+                                <span class="codigo__numero">01</span>
+                                <span class="azul">const</span>
+                                projeto =
+                                <span class="verde">"DevSpace"</span>;
+                            </p>
+
+                            <p>
+                                <span class="codigo__numero">02</span>
+                                <span class="azul">function</span>
+                                <span class="amarelo">criar()</span> {
+                            </p>
+
+                            <p class="recuo">
+                                <span class="azul">return</span>
+                                <span class="verde">
+                                    "Uma nova ideia";
+                                </span>
+                            </p>
+
+                            <p>
+                                <span class="codigo__numero">03</span>
+                                }
+                            </p>
+
+                            <p>
+                                <span class="codigo__numero">04</span>
+                                <span class="amarelo">
+                                    criar();
+                                </span>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="circulo circulo--1"></div>
+                    <div class="circulo circulo--2"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECURSOS -->
+
+        <section class="recursos" id="recursos">
+
+            <div class="container">
+
+                <div class="secao__cabecalho">
+
+                    <span class="etiqueta">
+                        Nossos recursos
+                    </span>
+
+                    <h2>
+                        Tudo para criar uma
+                        <span>interface incrível.</span>
+                    </h2>
+
+                    <p>
+                        Conheça alguns dos principais conceitos
+                        utilizados no desenvolvimento web.
+                    </p>
+
+                </div>
+
+
+                <div class="cards">
+
+                    <article class="card">
+
+                        <div class="card__icone">
+                            &lt;/&gt;
+                        </div>
+
+                        <h3>HTML semântico</h3>
+
+                        <p>
+                            Estruture suas páginas de maneira
+                            organizada, acessível e significativa.
+                        </p>
+
+                        <a href="#">
+                            Saiba mais →
+                        </a>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card__icone">
+                            🎨
+                        </div>
+
+                        <h3>CSS moderno</h3>
+
+                        <p>
+                            Crie layouts bonitos e responsivos
+                            utilizando propriedades modernas do CSS.
+                        </p>
+
+                        <a href="#">
+                            Saiba mais →
+                        </a>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <div class="card__icone">
+                            ⚡
+                        </div>
+
+                        <h3>Interatividade</h3>
+
+                        <p>
+                            Adicione comportamentos e interações
+                            para deixar sua página mais dinâmica.
+                        </p>
+
+                        <a href="#">
+                            Saiba mais →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+
+        <section class="sobre" id="sobre">
+
+            <div class="container sobre__conteudo">
+
+                <div class="sobre__imagem">
+
+                    <div class="painel">
+
+                        <div class="painel__barra">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="painel__grafico">
+
+                            <div class="barra barra--1"></div>
+                            <div class="barra barra--2"></div>
+                            <div class="barra barra--3"></div>
+                            <div class="barra barra--4"></div>
+                            <div class="barra barra--5"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="sobre__texto">
+
+                    <span class="etiqueta">
+                        Por que aprender?
+                    </span>
+
+                    <h2>
+                        Uma boa interface
+                        faz toda diferença.
+                    </h2>
+
+                    <p>
+                        Uma página web não precisa apenas
+                        funcionar. Ela também precisa ser
+                        agradável, intuitiva e acessível para
+                        quem utiliza.
+                    </p>
+
+                    <ul class="lista">
+
+                        <li>
+                            <span>✓</span>
+                            Layout responsivo
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            Código organizado
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            Boa experiência de usuário
+                        </li>
+
+                        <li>
+                            <span>✓</span>
+                            Acessibilidade
+                        </li>
+
+                    </ul>
+
+                    <a href="#contato" class="botao">
+                        Quero começar
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ESTATÍSTICAS -->
+
+        <section class="estatisticas">
+
+            <div class="container estatisticas__conteudo">
+
+                <div>
+                    <strong>100%</strong>
+                    <span>Responsivo</span>
+                </div>
+
+                <div>
+                    <strong>3</strong>
+                    <span>Tecnologias</span>
+                </div>
+
+                <div>
+                    <strong>∞</strong>
+                    <span>Possibilidades</span>
+                </div>
+
+                <div>
+                    <strong>1</strong>
+                    <span>Grande projeto</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTATO -->
+
+        <section class="contato" id="contato">
+
+            <div class="container contato__conteudo">
+
+                <div class="contato__texto">
+
+                    <span class="etiqueta">
+                        Vamos conversar
+                    </span>
+
+                    <h2>
+                        Pronto para começar
+                        seu próximo projeto?
+                    </h2>
+
+                    <p>
+                        Preencha o formulário e envie sua
+                        mensagem.
+                    </p>
+
+                </div>
+
+
+                <form class="formulario" id="formulario">
+
+                    <div class="campo">
+
+                        <label for="nome">
+                            Nome
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            placeholder="Digite seu nome"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Digite seu e-mail"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="mensagem">
+                            Mensagem
+                        </label>
+
+                        <textarea
+                            id="mensagem"
+                            rows="5"
+                            placeholder="Digite sua mensagem"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="botao"
+                    >
+                        Enviar mensagem
+                    </button>
+
+                    <p
+                        class="mensagem-formulario"
+                        id="mensagemFormulario"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="rodape">
+
+        <div class="container rodape__conteudo">
+
+            <a href="#" class="logo">
+                <span class="logo__icone">&lt;/&gt;</span>
+                <span>DevSpace</span>
+            </a>
+
+            <p>
+                Desenvolvendo ideias para a web.
+            </p>
+
+            <div class="redes">
+
+                <a href="#" aria-label="Instagram">
+                    Instagram
+                </a>
+
+                <a href="#" aria-label="GitHub">
+                    GitHub
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="rodape__final">
+            © 2026 DevSpace. Todos os direitos reservados.
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
